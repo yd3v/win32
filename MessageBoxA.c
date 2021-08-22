@@ -1,3 +1,4 @@
+// https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messageboxa
 #include <Windows.h>
 #include <string.h>
 #include <stdio.h>
@@ -18,6 +19,7 @@ int main() {
     );
 
     snprintf(Message, sizeof Message, "Bye bye. Exit code -> %d", MessageResult);
+
     MessageBox(NULL, Message, "Quitting", MB_OK | MB_ICONINFORMATION);
     return MessageResult;
 }
