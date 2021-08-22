@@ -1,6 +1,7 @@
 #include <Windows.h>
 #include <string.h>
 #include <stdio.h>
+
 int main() {
     char Message[25];
     int MessageResult;
@@ -15,7 +16,7 @@ int main() {
     } while(
         MessageResult == 4                              // Code for `retry` choose
     );
-    
+
     snprintf(Message, sizeof Message, "Bye bye. Exit code -> %d", MessageResult);
     MessageBox(NULL, Message, "Quitting", MB_OK | MB_ICONINFORMATION);
     return MessageResult;
