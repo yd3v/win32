@@ -19,8 +19,6 @@ section .text
         push    eax            ; Return code to ExitProcess (MessageBoxA return)
         cmp     eax,    4      ;                                    
         je      _start         ;                                    |
-        cmp     eax,    3      ;                                    |
-        je      _cancel        ;                                    |
-                               ;                                    |
+                               ;                                    |   
     _exit:                     ;                                    V
         call    ExitProcess    ;                                exit(eax)
