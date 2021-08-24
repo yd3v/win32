@@ -10,7 +10,7 @@ section .rodata
 
 section .text
     _start:
-        push    2              ; Buttons and icons
+        push    2              ; Buttons and icons (MB_ABORTRETRYIGNORE)
         push    Caption        ; Guess
         push    Text           ; Guess too
         push    0              ; Window Handle
