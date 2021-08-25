@@ -15,6 +15,7 @@ section .rodata
 section .bss
      Buffer:    resb 1024
      Handle:    resb 8
+
 section .text
     _start:
         push    0
