@@ -1,3 +1,6 @@
+; Pls be patient, i'll comment it
+; :D
+
 bits 32
 extern CreateFileA
 extern ReadFile
@@ -11,7 +14,7 @@ section .rodata
 
 section .bss
      Buffer:    resb 1024
-
+     Handle:    resb 8
 section .text
     _start:
         push    0
@@ -21,6 +24,7 @@ section .text
         push    1073741824
         push    Filename
         call    CreateFileA
-        push    eax
+        mov     [Handle],   eax
+
     _exit:
         call ExitProcess
