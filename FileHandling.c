@@ -8,7 +8,7 @@
 #define PINT(n) (printf("%d\n", n))
 #define CLEAN(s) (memset(s, 0x0, sizeof s))
 
-#define FILE "file.txt"
+#define FILE "Files\\File.txt"
 
 int main() {
     char Buffer[1024];
@@ -22,7 +22,7 @@ int main() {
         FILE_SHARE_READ | FILE_SHARE_WRITE, // Sharing mode (Read, write, or nothing by other processes)
         NULL,                               // Security attributes 
         OPEN_ALWAYS,                        // Choose the opening mode (What to do if the file exists, or not)
-        FILE_ATTRIBUTE_NORMAL,              // Opening atributes
+        FILE_ATTRIBUTE_NORMAL,              // Opening attributes
         NULL                                // File flags and attributes
     );
  

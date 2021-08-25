@@ -10,22 +10,24 @@ extern ExitProcess
 section .rodata
     global _start
     ToWrite:    db "New Line",  0xa
-    Filename:   db "File1.txt"
+    Filename:   db "Files\File1.txt", 0x0
 
 section .bss
      Buffer:    resb 1024
-     Handle:    resb 8
+     Handle:    resb 1
 
 section .text
     _start:
-        push    0
-        push    4
-        push    0
-        push    2
-        push    1073741824
-        push    Filename
-        call    CreateFileA
-        mov     [Handle],   eax
+        push    0                   ; NULL
+        push    128                 ; FILE_ATTRIBUTE_NORMAL
+        push    4                   ; OPEN_ALWAYS
+        push    0                   ; NULL
+        push    2                   ; FILE_SHARE_WRITE
+        push    1073741824          ; GENERIC_WRITE
+        push    Filename            ; Guess
+        call    CreateFileA         ; Call CreateFileA 
+        mov     [Handle],   eax     ; Stores the value returned by CreateFileA in Handle
+
 
     _exit:
         call ExitProcess

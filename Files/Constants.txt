@@ -1,5 +1,44 @@
-; https://doc.windev.com/?6510001
 
+PC SOFT
+ONLINE HELP
+ WINDEV, WEBDEV AND WINDEV MOBILE
+
+Version: 
+26
+
+Search...
+Home | Sign in | English EN
+
+
+Help
+
+Miscellaneous
+Value of constants for the Windows 32-bit API
+See also
+
+Chorus Pro: Automate the submission of invoices
+Declaring the functions of the Windows API
+LST: The Technical Support Newsletter, the WINDEV and WEBDEV magazine
+Site map of PC SOFT documentation
+Tutorial
+Value of constants for the Windows 32-bit API
+
+
+WINDEV
+WindowsLinuxUniversal Windows 10 AppJavaReports and QueriesUser code (UMC)
+WEBDEV
+WindowsLinuxPHPWEBDEV - Browser code
+WINDEV Mobile
+AndroidAndroid Widget iPhone/iPadApple WatchUniversal Windows 10 AppWindows Mobile
+Others
+Stored procedures
+See also
+Declaring the functions of the Windows API
+Value of constants for the Windows 32-bit API
+To find out the declaration syntax of the functions for the Windows 32-bit API, click: 32-bit API functions.
+Remark: The Windows constants can be included in your projects via the Extern keyword by using the following syntax
+EXTERN WinConst.wl
+A
 ACCESS_SYSTEM_SECURITY = 16777216
 APPCMD_MASK = 4080
 ACL_REVISION = 2
@@ -1890,33 +1929,33 @@ FAILED_ACCESS_ACE_FLAG = 128
 FOF_MULTIDESTFILES = 1
 FALT = 16
 FOF_NOCONFIRMATION = 16
-FCONTROL = 8
+FCONTROL = 8 
 FOF_NOCONFIRMMKDIR = 512
-FF_DECORATIVE = 80
-FOF_RENAMEONCOLLISION = 8
+FF_DECORATIVE  = 80
+FOF_RENAMEONCO LLISION = 8
 FF_DONTCARE = 0
-FOF_SILENT = 4
-FF_MODERN = 48
-FOF_SIMPLEPROGRESS = 256
+FOF_SILENT = 4  
+FF_MODERN = 48 
+FOF_SIMPLEPROGR ESS = 256
 FF_ROMAN = 16
-FOF_WANTMAPPINGHANDLE = 32
-FF_SCRIPT = 64
-FONTDLGORD = 1542
-FF_SWISS = 32
-FONTMAPPER_MAX = 10
-FILE_ADD_FILE = 2
-FOREGROUND_BLUE = 1
-FILE_ADD_SUBDIRECTORY = 4
-FOREGROUND_GREEN = 2
-FILE_ALL_ACCESS = 2032127
+FOF_WANTMAPPINGH ANDLE = 32
+FF_SCRIPT = 64 
+FONTDLGORD = 15 42
+FF_SWISS = 32 
+FONTMAPPER_MAX  = 10
+FILE_ADD_FILE =  2
+FOREGROUND_BLUE  = 1
+FILE_ADD_SUBDIREC TORY =  4
+FOREGROUND_GREEN =  2    
+FILE_ALL_ACCESS = 2 032 1     27
 FOREGROUND_INTENSITY = 8
-FILE_APPEND_DATA = 4
+FILE_APPEND_DATA = 4 
 FOREGROUND_RED = 4
-FILE_ATTRIBUTE_ARCHIVE = 32
+FILE_ATTRIBUTE_ARCHIVE  = 32
 FORM_BUILTIN = 1
 FILE_ATTRIBUTE_COMPRESSED = 2048
 FORMAT_MESSAGE_ALLOCATE_BUFFER = 256
-FILE_ATTRIBUTE_DIRECTORY = 16
+FILE_ATTRIBUTE_DIRECT ORY = 16
 FORMAT_MESSAGE_ARGUMENT_ARRAY = 8192
 FILE_ATTRIBUTE_HIDDEN = 2
 FORMAT_MESSAGE_FROM_HMODULE = 2048
@@ -2112,7 +2151,7 @@ GL_ID_NOMODULE = 1
 GCP_NODIACRITICS = 131072
 GL_ID_PRIVATE_FIRST = 32768
 GCP_NUMERICOVERRIDE = 16777216
-GL_ID_PRIVATE_LAST = 65535
+GL_ID_PRIVATE_LAST = 65535'
 GCP_NUMERICSLATIN = 67108864
 GL_ID_READINGCONFLICT = 35
 GCP_NUMERICSLOCAL = 134217728
@@ -6193,3 +6232,34 @@ XTYPF_NOBLOCK = 2
 XST_UNADVACKRCVD = 14
 XTYPF_NODATA = 4
 XST_UNADVSENT = 12
+
+Y
+Z
+See also
+Declaring the functions of the Windows API
+Minimum version required
+Version 9
+This page is also available for…
+WINDEV Mobile
+WINDEV
+WEBDEV
+Comments
+Add
+There is a search engine for Windows API constants
+It's located here: https://www.magnumdb.com/ it's 100% free and updated with the latest Windows SDK, AFAIK.
+
+Bernard Bulk
+31 May 2018
+Last update: 09/22/2020
+
+Send a report | Local help
+
+PC SOFT | Home | Forums | FAQ | Blogs | Technical Support |Technical support | Contact | Manage cookies
+
+
+Registered trademarks. Copyright ©2009-2021 PC SOFT. All rights reserved
+
+This website has been developed with WEBDEV and HFSQL
+
+WEBDEV, WINDEV Mobile and WINDEV programming
+

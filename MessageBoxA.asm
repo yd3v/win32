@@ -4,8 +4,6 @@ extern ExitProcess
 section .rodata
     Caption:    db "Hello Winapi",      0x0
     Text:       db "H3333333333333y!",  0x0
-    Caption2:   db "Message",           0x0
-    Text2:      db "Canceled",          0x0
     global _start
 
 section .text
