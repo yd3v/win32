@@ -4,9 +4,7 @@
 
 #include <Windows.h>
 #include <stdio.h>
-
-#define PINT(n) (printf("%d\n", n))
-#define CLEAN(s) (memset(s, 0x0, sizeof s))
+#include "Util.h"
 
 #define FILE "Files\\File.txt"
 
@@ -25,7 +23,7 @@ int main() {
         FILE_ATTRIBUTE_NORMAL,              // Opening attributes
         NULL                                // File flags and attributes
     );
- 
+
     CLEAN(Buffer);
 
     ReadFile(
