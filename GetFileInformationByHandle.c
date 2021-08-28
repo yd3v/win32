@@ -4,9 +4,9 @@
 #define FILENAME "Util.h"
 
 int main() {
-	BY_HANDLE_FILE_INFORMATION Info;
-	SYSTEMTIME                 Time;
-	SYSTEMTIME                 Now;
+	BY_HANDLE_FILE_INFORMATION     Info;
+	SYSTEMTIME                     Time;
+	SYSTEMTIME                     Now;
 	
 	HANDLE Handle = CreateFile(
 		FILENAME,
